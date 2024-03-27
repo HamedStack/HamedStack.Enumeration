@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamedStack.Enumeration", "HamedStack.Enumeration\HamedStack.Enumeration.csproj", "{F6FCD206-C626-4714-8429-EE05F7593EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamedStack.Enumeration.EntityFrameworkCore", "HamedStack.Enumeration.EntityFrameworkCore\HamedStack.Enumeration.EntityFrameworkCore.csproj", "{0ACD0830-6AFC-49C0-BE2D-D3903896AAF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6FCD206-C626-4714-8429-EE05F7593EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6FCD206-C626-4714-8429-EE05F7593EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6FCD206-C626-4714-8429-EE05F7593EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6FCD206-C626-4714-8429-EE05F7593EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ACD0830-6AFC-49C0-BE2D-D3903896AAF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ACD0830-6AFC-49C0-BE2D-D3903896AAF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ACD0830-6AFC-49C0-BE2D-D3903896AAF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ACD0830-6AFC-49C0-BE2D-D3903896AAF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D58E3F8A-974A-47E9-9D1B-822CBF2E634E}
+	EndGlobalSection
+EndGlobal
