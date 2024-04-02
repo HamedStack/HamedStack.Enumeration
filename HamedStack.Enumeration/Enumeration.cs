@@ -152,14 +152,19 @@ public abstract class Enumeration<T> : IComparable
         return !string.IsNullOrWhiteSpace(val.Description);
     }
 
-    public static T FromName(string name)
+    public static T FromName(string name, bool ignoreCase = false)
     {
-        return Parse(item => item.Name == name);
+        return ignoreCase 
+            ? Parse(item => string.Equals(item.Name, name, StringComparison.CurrentCultureIgnoreCase)) 
+            : Parse(item => item.Name == name);
     }
 
-    public static bool HasDescription(string name)
+    public static bool HasDescription(string name, bool ignoreCase = false)
     {
-        var val = Parse(item => item.Name == name);
+        var val = ignoreCase
+            ? Parse(item => string.Equals(item.Name, name, StringComparison.CurrentCultureIgnoreCase))
+            : Parse(item => item.Name == name);
+
         return !string.IsNullOrWhiteSpace(val.Description);
     }
 
@@ -175,9 +180,12 @@ public abstract class Enumeration<T> : IComparable
         result = GetAll().FirstOrDefault(item => item.Value == value);
         return result is not null;
     }
-    public static bool TryFromName(string name, [NotNullWhen(true)] out T? result)
+    public static bool TryFromName(string name, [NotNullWhen(true)] out T? result, bool ignoreCase = false)
     {
-        result = GetAll().FirstOrDefault(item => item.Name == name);
+        result = ignoreCase 
+            ? GetAll().FirstOrDefault(item => string.Equals(item.Name, name, StringComparison.CurrentCultureIgnoreCase))
+            : GetAll().FirstOrDefault(item => item.Name == name);
+
         return result is not null;
     }
 
