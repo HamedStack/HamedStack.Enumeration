@@ -7,7 +7,7 @@ public class EnumerationNameConverter<TEnumeration> : ValueConverter<TEnumeratio
 {
     public EnumerationNameConverter() : base(
         v => v.Name,
-        v => Enumeration<TEnumeration>.FromName(v))
+        v => Enumeration<TEnumeration>.FromName(v, false))
     {
     }
 }
